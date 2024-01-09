@@ -8,11 +8,11 @@ function Learn() {
   const course = coursesData.find((item) => item.id === courseId);
   // console.log(course);
 
-  const navigate = useNavigate();
-  const handleBackToHome = () => {
-    // Navigate back to the previous page
-    navigate(-1);
-  };
+  // const navigate = useNavigate();
+  // const handleBackToHome = () => {
+  //   // Navigate back to the previous page
+  //   navigate('/courses');
+  // };
   return (
     <div className={style.courses_container}>
       <div className={style.heading}>
@@ -22,7 +22,7 @@ function Learn() {
       <div className={style.chapters}>
         <h1>Chapters</h1>
         <ul>
-           <Link to="#" onClick={handleBackToHome}>
+           <Link to="/courses" >
                   Back to Home
                 </Link>
                 <hr />
